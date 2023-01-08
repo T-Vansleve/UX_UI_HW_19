@@ -1,0 +1,240 @@
+{background-color: #F3ECE1}
+
+.container {
+    background-image: url("../images/bg-image.png");
+    margin: 0px;
+    background-size: 80%;
+    background-repeat: no-repeat; 
+    background-position: right top;
+    padding-bottom: 0%;
+
+}
+
+
+
+/* top nav */
+
+.inlineBlock{
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 10px;
+    margin-right: 65px;
+    font-family: 'arial', medium;
+    font-size: 19px;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+button{
+    background-color: black;
+    color: #F3ECE1;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    margin: auto;
+    display: block;
+    width: 130px;
+}
+
+
+
+.Logo{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin-left: 50px;
+}
+
+/* hero section */
+
+.heroimg{
+    padding-left: 50px;
+
+}
+
+.content{
+    width: 600px;
+    padding-bottom: 400px;
+    padding-top: 300px;
+
+}
+
+h3 {
+    font-family: 'arial', medium;
+    font-size: 30px;
+}
+
+h4 {
+    font-family: 'arial', regular;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+/* case study list */
+
+.myProjects{
+    display:inline-grid;
+    grid-template-rows: 2;
+    grid-gap: 0px 0px;
+}
+
+.featureImg{
+    grid-column: 1; 
+    justify-self: start;
+
+}
+
+.text{
+    grid-column: 2; 
+    justify-self: end;
+}
+
+.caseStudyTitles{
+    grid-template-columns: 2;
+    grid-template-rows: 2;
+    display:inline-grid;
+    grid-gap: 10px 10px;
+    
+}
+
+.caseNumber{
+    grid-column: 1; 
+    justify-self: center;
+    align-self: start;
+    padding-top: 20px;
+}
+
+.titleText{
+    grid-column: 2; 
+
+
+}
+#subcaption{
+    grid-row: 2; 
+    align-self: start;
+    padding-top: 0px;
+
+}
+
+h1 {
+    font-family: Maragsa;
+    font-size: 50px;
+    padding-bottom: 0px;
+    text-align: top left;
+
+
+}
+/* my skills section */
+
+.mySkills{
+    padding-bottom: 0px;
+}
+
+#skillsHeading{
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+
+
+.skills{
+    display:inline-grid;
+    grid-template-columns: 20% 20% 20%;
+    justify-content: center;
+}
+
+.skillsLeft{
+    grid-column: 33%; 
+    justify-self: center;
+    text-align: center;
+
+}
+
+.skillsCenter{
+    grid-column: 33%; 
+    justify-self: center;
+}
+
+.skillsFont{
+    font-family: 'arial', medium;
+    font-size: 12px;
+    padding-bottom: 50px;
+}
+
+/* quote section */
+
+#quoteText{
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 20px;
+
+}
+
+.author{
+    text-align: right;
+    padding-right: 230px;
+    padding-bottom: 150px;
+}
+
+
+.quote {
+    background-image: url("../images/quoteBg.png");
+    margin: -50px;
+    background-size: 100%;
+    background-repeat: no-repeat; 
+    background-position: right top;
+    padding-bottom: 150px;
+
+}
+
+
+
+/* footer section */
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: block;
+    
+}
+
+.footerBar{
+    background-color: black;
+    color: #F3ECE1;
+    vertical-align:middle;
+    font-family: 'arial', medium;
+    font-size: 19px;
+    padding-left: 25px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 50%;
+}
+.right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+    padding-right: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+    .myProjects {
+      flex-direction: column;
+    }
+  }
