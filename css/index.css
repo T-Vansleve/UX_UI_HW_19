@@ -29,19 +29,89 @@ a{
     color: black;
 }
 
-button{
-    background-color: black;
-    color: #F3ECE1;
+
+/* new button */
+
+button {
+    background-color: #000000;
     border-radius: 5px;
-    border: none;
+    color: #F3ECE1;
     cursor: pointer;
+    padding: 10px 40px;
+    display: inline-block;
+    text-transform: uppercase;
     outline: none;
-    margin: auto;
+    position: relative;
+    opacity: 1;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    cursor:pointer;
+    background:black;
+    text-align:center;
+    border: none;
+    margin: 0;
+    padding: 17px;
+    width:130px;
+    font-size: 13px;
+  }
+  button span {
+    display: inline-block;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+  }
+  button ion-icon {
+    font-size: 25px;
+    text-align: center;
+    width: 100%;
+    top: 50%;
+    left: 0;
     display: block;
-    width: 130px;
-}
+    position: absolute;
+    opacity: 0;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+  }
+  button:before {
+    content: '';
+    top: 0;
+    left: 50%;
+    right: 50%;
+    position: absolute;
+    height: 100%;
+    background: rgba(82, 149, 97, 100);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-transition-delay: 0.15s;
+    transition-delay: 0.15s;
+    border-radius: 5px;
+  }
+  button:hover span,
+  button.hover span {
+    opacity: 0;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+  }
+  button:hover ion-icon,
+  button.hover ion-icon {
+    opacity: 1;
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+  }
+  button:hover:before,
+  button.hover:before {
+    left: 0;
+    right: 0;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+  }
 
-
+  /* end new button */
 
 .Logo{
     display: flex;
@@ -77,7 +147,7 @@ h4 {
 
 /* case study list */
 
-#myProjects{
+.myProjects{
     display:inline-grid;
     grid-template-rows: 2;
     grid-gap: 0px 0px;
@@ -89,7 +159,7 @@ h4 {
 
 }
 
-#text{
+.text{
     grid-column: 2; 
     justify-self: end;
 }
@@ -126,7 +196,6 @@ h1 {
     font-size: 50px;
     padding-bottom: 0px;
     text-align: top left;
-    margin: 0px;
 
 
 }
@@ -233,6 +302,48 @@ h1 {
     width: 50%;
     padding-right: 50px;
 }
+
+
+/* modal */
+
+/* Modal Header */
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+  }
+  
+  /* Modal Body */
+  .modal-body {padding: 2px 16px;}
+  
+  /* Modal Footer */
+  .modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  /* Add Animation */
+  @keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+  }
+
+
+  /*end modal */
 
 @media only screen and (max-width: 600px) {
     #myProjects {

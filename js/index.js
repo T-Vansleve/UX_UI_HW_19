@@ -1,1 +1,5 @@
-console.log("Hello world!");
+$("button").mouseleave(
+    function() {
+      $(this).removeClass("hover");
+    }
+  );
